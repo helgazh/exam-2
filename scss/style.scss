@@ -1,0 +1,312 @@
+@import "slick.scss";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('Gotham-Book.woff2') format('woff2'),
+		url('Gotham-Book.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('GothamMedium.woff2') format('woff2'),
+		url('GothamMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('Gotham-Bold.woff2') format('woff2'),
+		url('Gotham-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Layout */
+.ba-container {
+	padding-left: 215px;
+	padding-right: 215px;
+	max-width: 1600px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+	display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {}
+
+textarea {}
+
+
+//header
+.ba-header {
+	background: #7B6CFD url('../img/bg_header.jpg') 50% no-repeat;
+	background-size: cover;
+
+	span {
+		font-family: 'Gotham', sans-serif;
+		color: #ffffff;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 22px;
+		text-align: center;
+		margin-left: 200px;
+
+		text-transform: uppercase;
+
+		margin-top: 30px;
+	}
+
+	.ba-header-bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		margin-bottom: 280px;
+		
+
+		.ba-social{
+			padding-top: 50px;
+
+			a{
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+
+
+		nav {
+			display: flex;
+			margin-bottom: 50px;
+
+			margin-top: 50px;
+
+
+			
+
+		}
+
+		.ba-menu {
+			display: flex;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			align-items: center;
+
+			li {
+				display: flex;
+
+				a {
+					display: flex;
+					text-decoration: none;
+					color: #fff;
+					text-transform: uppercase;
+
+					font-family: Gotham;
+					color: #ffffff;
+					font-size: 14px;
+					font-weight: 300;
+					line-height: 22px;
+					text-align: left;
+
+					margin-right: 20px;
+					&:hover{
+						color: #000;
+					}
+				}
+
+			}
+		}
+
+	}
+
+
+
+	h1 {
+		font-family: 'Gotham', sans-serif;
+		color: #ffffff;
+		font-size: 80px;
+		font-weight: 700;
+		line-height: 22px;
+		text-align: center;
+	}
+
+	.ba-social {
+		svg {
+			width: 75px;
+			height: 75px;
+		}
+	}
+}
+
+
+
+h2 {
+	font-family: 'Gotham', sans-serif;
+	text-transform: uppercase;
+	color: #2c4058;
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 22px;
+	text-align: center;
+
+	margin-bottom: 170px;
+	margin-top: 140px;
+}
+
+//section-1
+
+.ba-section-1 {
+	margin-left: 100px;
+	margin-right: 100px;
+
+
+	.ba-row {
+		.ba-section-1__img {
+			width: 530px;
+			height: 370px;
+		}
+
+
+		.ba-section-2__img {
+			width: 530px;
+			height: 370px;
+		}
+	}
+
+	p {
+		font-family: OpenSans;
+		color: rgba(74, 85, 98, 0.5);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		text-align: left;
+	}
+
+	.ba-adress {
+		font-family: OpenSans;
+		color: #2c4058;
+		font-size: 18px;
+		font-style: italic;
+		line-height: 30px;
+		text-align: left;
+	}
+
+
+
+
+
+	span {
+		font-family: 'Gotham', sans-serif;
+		color: #2c4058;
+		font-size: 22px;
+		font-weight: 300;
+		line-height: 24px;
+		text-align: left;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		font-family: 'Gotham', sans-serif;
+		color: #2c4058;
+		font-size: 44px;
+		font-weight: 700;
+		line-height: 24px;
+		text-align: left;
+		text-transform: uppercase;
+		margin-top: 10px;
+	}
+
+}
+
+//section-2
+.ba-section-2 {
+	background: url("../img/section-2/bg-2.jpg") 50% no-repeat;
+	background-size: cover;
+
+	h2 {
+		color: #fff;
+		padding-top: 180px;
+		margin-bottom: 100px;
+	}
+
+	.ba-news {
+		background: #fff;
+		margin-left: 30px;
+		}
+
+		.ba-who {
+			display: inline-flex;
+		}
+	}
+
+	.slick-dots{
+			color: #fff;
+			display: flex;
+
+
+		button{
+			visibility: hidden;
+		}
+	}
+	.slick-next,
+	.slick-prev{
+		visibility: hidden;
+		
+	}
+
+
+
+
+//gallery
+.wrapp{
+	display: grid;
+	grid-template-columns: 480px 250px 250px;
+    grid-template-rows:  250px 250px;
+}
+
+//map
+.ba-map{
+	height: 700px;
+}
